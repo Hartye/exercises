@@ -4,7 +4,7 @@ class dateClass {
         this.result()
     }
 
-    result(start, stop) {
+    result(start=12, stop) {
         stop = stop === undefined ? stop = start: stop = stop
         start = stop === start ? start = 0: start = start - 1
 
@@ -21,4 +21,4 @@ class dateClass {
 
 const dateOnClass = new dateClass()
 
-console.log(dateOnClass.result(2))
+dateOnClass.result(2)
