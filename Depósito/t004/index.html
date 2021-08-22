@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hartye">
+    <meta name="description" content="Site de testes">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <form>
+            <div>
+                <label for="nome">Email:</label>
+                <input type="text" name="nome" id="nome" placeholder="exemplo@algo.com" required autocomplete="email">
+                <button type="reset">Resetar</button>
+            </div>
+            
+            <br>
+
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" minlength="4" maxlength="8" placeholder="Numérica" required size="5" inputmode="numeric">
+                <button type="reset">Resetar</button>
+                <button type="submit">Confirmar</button>
+            </div>
+        </form>
+        <form>
+            <input type="text" name="local" id="local" list="local-ex">
+            <datalist id="local-ex">
+                <option value="São Paulo">Cidade perfeita</option>
+                <option value="Rio de Janeiro">A beldade em forma de cenário</option>
+                <option value="Lisboa">Meh, bleh, xoxo</option>
+            </datalist>
+        </form>
+    </main>
+
+    <footer>
+        <addres>
+            <label>Me encontre</label> <br>
+            <a href="https://github.com/hartye">Github</a> <br>
+            <a href="mailto:danielrochasilva211@gmail.com">Email</a> <br>
+            <a href="tel:+351964736639">Telefone</a> <br>
+        </addres>
+        &copy; Hartye
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

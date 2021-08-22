@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hartye">
+    <meta name="description" content="Site de testes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="logo">
+        <h1>ToDo</h1>
+    </header>
+
+    <main class="container">
+        <div class="body">
+            <nav>
+                <a href="#" onclick="Note.swap()">+ Nova Tarefa</a>
+            </nav>
+
+            <div class="table">
+                <table class="table-sheet">
+                    <thead>
+                        <tr>
+                            <th>Editar</th>
+                            <th>Descrição</th>
+                            <th>Data</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#">&#x1f58a;&#xfe0f;</a></td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                            <td>20/08/2021</td>
+                            <td><input type="checkbox" name="check" id="check"></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">&#x1f58a;&#xfe0f;</a></td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                            <td>22/08/2021</td>
+                            <td><input type="checkbox" name="check" id="check"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <div class="note-popup active">
+        <form action="" class="form" onsubmit="Form.submit(event)">
+            <div class="new-note-content">
+                <h3>Nova Tarefa</h3>
+                <label for="description" class="sr-only">Nova Tarefa</label>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Descrição"></textarea>
+
+                <label for="date" class="sr-only"></label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="new-content-buttons">
+                <label for="button-submit" class="sr-only">Aplicar</label>
+                <button id="button-submit" type="submit">Aplicar</button>
+
+                <label for="button-cancel" class="sr-only">Cancelar</label>
+                <button id="button-cancel" onclick="Note.swap()" type="">Cancelar</button>
+            </div>
+
+        </form>
+    </div>
+
+    <footer>
+        <div class="copy">&copy; Hartye</div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

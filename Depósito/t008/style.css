@@ -1,0 +1,92 @@
+body {
+    background: #b9b5b5;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+.copy {
+    opacity: 0.6;
+    text-align: center;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Main /////////////// */
+main {
+    width: min(50vw, 500px);
+    margin: auto;
+}   
+
+.progress {
+    margin-right: -2rem;
+    border: .01rem rgba(0, 0, 0, .2) solid;
+}
+
+.progress-line {
+    background-color: red;
+    padding: .5rem;
+    margin: -1rem 6rem 0 -2rem;
+}
+
+.body {
+    background-color: #ffffff;
+    padding: 1em 2rem 2rem;
+    border: 1px rgb(160, 158, 158) solid;
+}
+
+.amount {
+    display: flex;
+    justify-content: space-between;
+}
+
+#input-amount {
+    height: 2rem;
+    width: 8rem;
+    font-size: 20px;
+}
+
+#donate {
+    height: 2.5rem;
+    width: 8rem;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.buttons {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    height: 3rem;
+    width: 10rem;
+    border-radius: .25rem;
+    border: 1px gray solid;
+    background: white;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.alert {
+    padding: .5rem 1rem;
+    background: rgba(0, 0, 0, .4);
+    margin: 1rem 0;
+    color: white;
+    font-size: 16px;
+    border-radius: .25rem;
+    text-align: center
+}

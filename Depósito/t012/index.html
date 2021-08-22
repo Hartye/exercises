@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hartye">
+    <meta name="description" content="Site de testes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div class="table-canvas">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Data</th>
+                        <th></th>
+                    </tr>
+                </thead>    
+                <tbody class="notes-content">
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <div class="add-note">
+        <label for="button" class="sr-only">Adicionar nota</label>
+        <button class="button" onmousedown="buttonScale.scale(1)" onmouseup="buttonScale.scale(1)" onclick="Popup.swap()">+</button>
+    </div>
+
+    <div class="popup">
+
+        <div class="add-note-canvas">
+
+            <form action="" onsubmit="Data.submit(event)" id="popup-form">
+
+                <div class="body">
+                    <label for="description" class="sr-only">Descrição</label>
+                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Descrição"></textarea>
+                    <br>
+                    <label for="date" class="sr-only">Data</label>
+                    <input type="date" name="date" id="date">
+                </div>
+
+            </form>
+
+            <div class="button-canvas">
+                <button 
+                class="popup-button add-button" onmousedown="buttonScale.scale(2)" 
+                onmouseup="buttonScale.scale(2)"
+                onclick="Popup.swap()"
+                type="submit"
+                form="popup-form"
+                >Salvar</button>
+
+                <button 
+                class="popup-button cancel-button" onmousedown="buttonScale.scale(3)"
+                onmouseup="buttonScale.scale(3)" 
+                onclick="Popup.swap()"
+                >Cancelar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="copy">&copy; <span class="date"></span> Hartye</div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

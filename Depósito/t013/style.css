@@ -1,0 +1,28 @@
+body {
+    background: #ffffff;
+    font-family: 'Roboto',
+    sans-serif;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.copy {
+    opacity: 0.6;
+    text-align: center;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.span {
+    background: white;
+}

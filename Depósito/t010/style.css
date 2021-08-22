@@ -1,0 +1,62 @@
+:root {
+    --background: #cffc7b;
+    --red: #f53a3aed;
+}
+
+body {
+    background: var(--background);
+    font-family: 'Roboto',
+    sans-serif;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.copy {
+    opacity: 0.6;
+    text-align: center;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Main ========================= */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    background-color: var(--red);
+    width: min(60vw, 500px);
+    margin: auto;
+    height: 20vh;
+    border-radius: .5rem;
+}
+
+button {
+    height: 4rem;
+    width: 10rem;
+    background-color: white;
+    border-radius: .25rem;
+    border: none;
+    box-shadow: 0 .5rem 0 rgb(207, 206, 206);
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--red);
+    transition: .1s;
+}
+
+.button.active {
+    box-shadow: none;
+    height: 4rem;
+    border: none;
+    transform: translate(0, 9px)
+}

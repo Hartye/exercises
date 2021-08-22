@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hartye">
+    <meta name="description" content="Site de testes">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Revisão de Tabela</h1>
+    </header>
+
+    <main>
+        <table>
+            <caption>
+                Vendas
+            </caption>
+            <thead>
+                <tr>
+                    <th rowspan="2"></th>
+                    <th colspan="2">Loja 1</th>
+                    <th colspan="2">Loja 2</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <colgroup>
+                    <col>
+                    <col span="2" style="background: yellow;">
+                    <col span="2" style="background: orange;">
+                </colgroup>
+
+                <tr>
+                    <th></th>
+                    <th>compras</th>
+                    <th>vendas</th>
+                    <th>compras</th>
+                    <th>vendas</th>
+                </tr>
+                <tr>
+                    <th>tablet:</th>
+                    <td>70</td>
+                    <td>15</td>
+                    <td>50</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th>pc:</th>
+                    <td>30</td>
+                    <td>20</td>
+                    <td>50</td>
+                    <td>50</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <addres>
+            <dl>
+                <dt>Me encontre</dt>
+                <dd><a href="https://github.com/hartye">Github</a></dd>
+                <dd><a href="mailto:danielrochasilva211@gmail.com">Email</a></dd>
+                <dd><a href="tel:+351964736639">Telefone</a></dd>
+            </dl>
+        </addres>
+        &copy; Hartye
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

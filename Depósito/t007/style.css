@@ -1,0 +1,196 @@
+/* Global \\\\\\\\\\\\\\\\\\\\ */
+:root {
+    --white: rgb(236, 231, 231);
+    --black: #434142;
+    --orange: #FFCB05;
+}
+
+body {
+    background: var(--orange);
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+button {
+    border: none;
+    width: 150px;
+    height: 3rem;
+    border-radius: .25rem;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+/* Header \\\\\\\\\\\\\\\\\\\\ */
+.logo {
+    background: var(--black);
+    text-align: center;
+    width: 100%;
+    top: 0;
+    padding: 2rem 0 20vh;
+}
+
+.logo h1 {
+    color: rgb(253, 184, 54);
+}
+
+/* Main \\\\\\\\\\\\\\\\\\\\ */
+.container {
+    width: min(70vw, 800px);
+    margin: auto;
+    margin-top: -10rem;
+}
+
+.body {
+    height: 80vh;
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* Navigation \\\\\\\\\\\\\\\\\\\\ */
+nav {
+    border-radius: .25rem;
+    background: var(--orange);
+    padding: 1rem;
+}
+
+/* Note \\\\\\\\\\\\\\\\\\\\ */
+.note-popup.active {
+    background: rgba(0, 0, 0, .7);
+    top: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+}
+
+.form {
+    background: var(--white);
+    width: min(90vw, 400px);
+    display: block;
+    text-align: center;
+
+    padding: 1rem 2rem;
+}
+
+.note-popup {
+    display: none;
+}
+
+textarea {
+    border: none;
+    background: #faf9f9;
+    height: 10vh;
+    width: 95%;
+    border-radius: .25rem;
+    font-size: 20px;
+}
+
+#date {
+    margin: .5rem 0;
+    border: none;
+    width: 95%;
+    height: 5vh;
+}
+
+/* Note Buttons \\\\\\\\\\\\\\\\\\\\ */
+.new-content-buttons {
+    margin-top: 1em;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#button-submit {
+    color: rgb(236, 231, 231);
+    font-size: 17px;
+    font-weight: bolder;
+    background: rgb(131, 214, 5);
+    padding: 2px;
+}
+
+#button-submit:hover {
+    background: rgb(124, 204, 4);
+}
+
+#button-cancel {
+    color: rgb(255, 32, 32);
+    font-size: 17px;
+    font-weight: bolder;
+    background: transparent;
+    border: 2px rgb(255, 32, 32) solid;
+}
+
+#button-cancel:hover {
+    color: rgb(223, 27, 27);
+    border: 2px rgb(223, 27, 27) solid;
+}
+
+/* Table \\\\\\\\\\\\\\\\\\\\ */
+.table {
+    margin-top: 100px;
+    background: var(--black);
+    border-radius: .25rem;
+}
+
+.table-sheet {
+    padding: 1rem;
+    width: 100%;
+    border-spacing: 1rem;
+    overflow-x: scroll;
+}
+
+.table-sheet thead {
+    text-align: center;
+}
+
+.table-sheet tbody {
+    text-align: center;
+}
+
+#check {
+    padding: 8px;
+    -webkit-appearance: none;
+    background: var(--orange);
+
+    display: flex;
+    align-items: center;
+}
+
+#check:checked {
+    content: '&check;';
+    background: rgb(30, 230, 30);
+}
+
+/* Footer \\\\\\\\\\\\\\\\\\\\ */
+.copy {
+    opacity: 0.6;
+    text-align: center;
+}
+
+/* Responsive \\\\\\\\\\\\\\\\\\\\ */
