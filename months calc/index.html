@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hartye">
+    <meta name="description" content="Site de testes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h2>Months counter</h2>
+    </header>
+
+    <main>
+        <form action="" onsubmit="Form.submit(event)">
+            <input type="month" name="start" id="start"> <br>
+            <small><label for="start" class="required-value">* preencha ao menos o primeiro campo.</label></small>
+            <br>
+            <input type="month" name="stop" id="stop">
+            <br>
+            <button type="submit">Confirmar</button>
+            <Button class="delete-button" type="reset"><img src="./icons/delete.svg" alt="delete"
+                    class="delete-icon" onclick="Form.clearCanvas()"></Button>
+        </form>
+
+        <textarea name="results" id="results" cols="30" rows="10" disabled placeholder="answers"></textarea>
+    </main>
+
+    <footer>
+        <div class="copy">&copy; <span class="date"></span> Hartye</div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
